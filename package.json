@@ -1,13 +1,14 @@
 {
   "name": "metals",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Small, modern, and complete testing framework for Node.js",
   "main": "build/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc && perl -i -pe 's,#!/usr/bin/env ts-node,#!/usr/bin/env node,g' build/cli.js && chmod +x build/cli.js",
     "test": "MODE=test NODE_NO_WARNINGS=1 ts-mocha -n loader=ts-node/esm -p tsconfig.json 'test/index.spec.ts'",
-    "dev": "nodemon --watch src --ext '.' --exec 'npm run build && npm run test'"
+    "dev": "nodemon --watch src --ext '.' --exec 'npm run build && npm run test'",
+    "prepublishOnly": "npm run build"
   },
   "bin": "build/cli.js",
   "files": [
