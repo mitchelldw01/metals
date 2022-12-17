@@ -74,7 +74,7 @@ If you're using TypeScript, make sure that you enable [ts-node](https://www.npmj
 
 ```json
 {
-  "tsm": {
+  "ts-node": {
     "esm": true
   }
 }
