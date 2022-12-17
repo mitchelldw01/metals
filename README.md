@@ -9,7 +9,7 @@ Small, modern, and complete testing framework for Node.js
 - Zero dependencies
 - TypeScript and ESM work out of the box
 - Works with any assertion library
-- Lifecycle hooks with access to test results during runtime
+- Lifecycle hooks with access to test results at runtime
 - No implicit global variables
 - Built-in async/await support
 - Nested test suites
