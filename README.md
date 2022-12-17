@@ -66,9 +66,19 @@ suite("Lib", () => {
 
 ## Executing Tests
 
-> 🚨 Use at least **v18** of node when executing tests
+> Use at least **v18** of node when executing tests
 
 If you've installed the CLI with `npm i -g metals` then you can run commands in the terminal. Otherwise, commands must be ran via a script in your `package.json`.
+
+If you're using TypeScript, make sure that you enable [ts-node](https://www.npmjs.com/package/ts-node) in your `tsconfig.json`:
+
+```json
+{
+  "tsm": {
+    "esm": true
+  }
+}
+```
 
 Execute a test file:
 
