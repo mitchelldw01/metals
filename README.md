@@ -98,10 +98,16 @@ Execute all files that match a glob:
 metals src/*.test.js
 ```
 
+Execute files using `find`:
+
+```
+metals $(find src -type f -name '*.test.ts')
+```
+
 When a test file is complete, it will use port `5050` to communicate the final number of passed and failed tests. If this is a problem for you, just set the `PORT` environment variable to something else:
 
 ```
-PORT=4321 metals src/**/*.test.js
+PORT=4321 metals my.test.ts
 ```
 
 ## Hooks
