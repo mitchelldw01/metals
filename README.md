@@ -95,7 +95,7 @@ metals my.test.ts
 Execute all files that match a glob:
 
 ```
-metals src/**/*.test.js
+metals src/*.test.js
 ```
 
 When a test file is complete, it will use port `5050` to communicate the final number of passed and failed tests. If this is a problem for you, just set the `PORT` environment variable to something else:
